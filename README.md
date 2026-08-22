@@ -2,7 +2,7 @@
 Setup docker para servidor minecraft
 
 # ARQUIVOS NECESSARIOS
-1. Arquivo .jar servidor minecraft. Baixar arquivo acessando: [Minecraft](https://www.minecraft.net/pt-br/download/server)
+1. Arquivo .jar servidor minecraft. Baixar arquivo acessando: [VERSÃO JAVA](https://www.minecraft.net/pt-br/download/server) ou [VERSÃO BEDROCK](https://www.minecraft.net/en-us/download/server/bedrock)
 
 # SETUP
 - Rodar os seguintes comandos respectivamente (rodar como admin):
