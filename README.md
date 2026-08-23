@@ -6,13 +6,23 @@ Setup docker para servidor minecraft
 
 # SETUP
 - Rodar os seguintes comandos respectivamente (rodar como admin):
+1. Criar imagem
 ```bash
-# 1 - criar imagem
 docker build -t minecraft-server .
+```
 
-#2 - gerar container da imagem
-docker container run -di -p 25565:25565 minecraft-server
+2. Gerar o container
+```bash
+sudo docker run -d \
+  --name test \
+  -p 25565:25565 \
+  --privileged \
+  --cgroupns=host \
+  -v /sys/fs/cgroup:/sys/fs/cgroup:rw \
+  minecraft-server
+```
 
-#3 - para acessar a máquina
+3. Acessar terminal do container
+```bash
 docker exec docker exec -it <hash gerado> sh
 ```
