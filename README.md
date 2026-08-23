@@ -26,3 +26,14 @@ sudo docker run -d \
 ```bash
 docker exec docker exec -it <hash gerado> sh
 ```
+
+# RODAR SERVIDOR
+1. Rodar arquivo .jar
+```bash
+java -jar server.jar
+```
+
+2. Rodar playit
+```bash
+playit
+```
